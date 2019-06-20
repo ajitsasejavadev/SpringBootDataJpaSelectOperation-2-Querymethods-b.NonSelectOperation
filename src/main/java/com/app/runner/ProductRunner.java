@@ -15,9 +15,15 @@ public class ProductRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		System.out.println("--------1.Output---------------------------------------");
+		
+		int count1 =repo.updateCost(18.18, 4);
+		System.out.println(count1);
 
-		int count =repo.removeData(2);
-		System.out.println(count);
+		System.out.println("--------2.Output---------------------------------------");
+		
+		int count2 =repo.removeData(2);
+		System.out.println(count2);
 	}
 
 }
