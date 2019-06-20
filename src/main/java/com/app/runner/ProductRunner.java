@@ -16,6 +16,8 @@ public class ProductRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 
+		int count =repo.removeData(2);
+		System.out.println(count);
 	}
 
 }
